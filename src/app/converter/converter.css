@@ -1,0 +1,15 @@
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  background: hsla(30, 5%, 39%, 0.6);
+}
+input, select, button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 16px;
+}
+

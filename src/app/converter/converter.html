@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Currency Converter</h1>
+  <h2>A basic Currency converter which uses the last stored currency value to convert from One type to another type currency</h2>
+
+  <label>Amount:</label>
+  <input type="number" [(ngModel)]="amount" />
+
+  <label>From:</label>
+  <select [(ngModel)]="fromCurrency">
+    <option value="USD">USD</option>
+    <option value="INR">INR</option>
+    <option value="EUR">EUR</option>
+  </select>
+
+  <label>To:</label>
+  <select [(ngModel)]="toCurrency">
+    <option value="USD">USD</option>
+    <option value="INR">INR</option>
+    <option value="EUR">EUR</option>
+  </select>
+
+  <button (click)="convertCurrency()">Convert</button>
+
+  <div *ngIf="result !== null">
+    <h3>Result: {{ result | number }} {{ toCurrency }}</h3>
+  </div>
+</div>
